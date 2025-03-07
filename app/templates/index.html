@@ -1,5 +1,7 @@
+<!-- The extends Jinja template includes the content of a template (here base.html) -->
 {% extends "base.html" %}
 
+<!-- replaces the block named 'content' from the base html file-->
 {% block content %}
 
     <h1>Hello {{user.username}}!</h1>
@@ -9,3 +11,7 @@
     {% endfor %}
 
 {% endblock %}
+
+<!-- Some more notes: -->
+<!-- {{  }} is used to insert data dynamically -->
+<!-- {%  %} is used to define Jinja keywords-->
